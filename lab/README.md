@@ -201,7 +201,7 @@ With 16GB RAM, we cannot run everything simultaneously. The lab is designed in *
    3. Install pfSense → Assign interfaces: em0=WAN, em1=LAN, em2=OPT1
    4. LAN IP: 10.0.3.1/24, OPT1 IP: 192.168.56.80/24
    5. Enable SSH via console option 14
-   6. Web GUI at http://192.168.56.80 (admin/pfsense)
+   6. Web GUI at http://192.168.56.80
    7. Firewall rules: allow TCP 22 from OPT1 for SSH, allow any from OPT1 to LAN
    8. (Optional) Install Suricata package for IDS/IPS
 
@@ -212,7 +212,7 @@ With 16GB RAM, we cannot run everything simultaneously. The lab is designed in *
 - **Network:** NIC 1 (soc-net: 10.0.3.85/24), NIC 2 (Host-Only vboxnet0: 192.168.56.85)
 - **Purpose:** SIEM, log aggregation, intrusion detection, file integrity monitoring
 - **Deploy:** Import `wazuh-4.14.5.ova` with reduced specs
-- **Credentials:** wazuh-user/wazuh (SSH), admin/admin (Dashboard)
+- **Credentials:** See AGENTS.md (gitignored — contains passwords)
 - **Dashboard:** https://192.168.56.85
 - **Practice:**
   - Deploy Wazuh agents on target VMs (Kali, Metasploitable, Win11, DC, etc.)

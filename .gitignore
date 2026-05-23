@@ -2,6 +2,9 @@
 lab/resources/
 lab/VMS/
 
+# Sensitive - VM credentials
+AGENTS.md
+
 # Windows
 Thumbs.db
 Desktop.ini
